@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SuiteBlogApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <h1>SuperSuiteBlargh</h1>
+  </header>
+
+  <h2 id="add-entry">Add Entry</h2>
+  <div id="new-entry">
+    <table id="entry-form">
+      <tr>
+        <td><label for="author">Author: </label></td>
+        <td><input id="new-author"></input></td>
+      </tr>
+      <tr>
+        <td><label for="title">Title</label></td>
+        <td><input id="new-title"></input></td>
+      </tr>
+      <tr>
+        <td><label for="mood">Mood: </label></td>
+        <td><input id="new-mood"></input></td>
+      </tr>
+      <tr>
+        <td><label for="content">Content: </label></td>
+        <td><input id="new-content"></input></td>
+      </tr>
+    </table>
+    <button class="submit">Submit Entry</button>
+  </div>
+
+  <h2>All Entries</h2>
+  <div id="entry-list"></div>
+
+</body>
+</html>
