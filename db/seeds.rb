@@ -15,3 +15,20 @@ for i in 1..20
     content: lorem
     })
 end
+
+blog_post_content = "So, this weekend's assignment was both frustrating and satisfying. I thought
+the reading component of the assignment was awesome. By far the best resource on Backbone we've used
+thus far. I spent a good part of Friday and the early part of Saturday doing the reading, and it
+definitely helped. I'll for sure be reading through the rest of it in the coming days and weeks.
+
+As for the actual coding, that wasn't as great. I got somewhat far without referring back to
+code that we wrote last week, but then I hit a wall and had to consult it several times. I knew
+from the outset that I wouldn't just be able to do it from memory though, since there's a lot going
+on and it's a totally new way of thinking about displaying and managing content. "
+
+Entry.create!({
+  author: "Sean T.",
+  title: "Feelings on Backbone",
+  mood: "Excited",
+  content: blog_post_content.gsub('\n', ' ')
+  })

@@ -26,8 +26,8 @@ class EntriesController < ActionController::Base
 
   def destroy
     @entry = Entry.find(params[:id])
-    if @song.destroy
-      render json: @song.to_json, status: 200
+    if @entry.destroy
+      render json: @entry.to_json, status: 200
     end
   end
 
