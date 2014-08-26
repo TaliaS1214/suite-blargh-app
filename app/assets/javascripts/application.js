@@ -22,9 +22,6 @@
 //= require_tree ./backbone/views
 //= require_tree ./templates
 //= require_tree .
-//= require foundation
-
-$(document).foundation();
 
 App = {
   Models: {},
