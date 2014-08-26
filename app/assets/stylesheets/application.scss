@@ -24,6 +24,10 @@ h1 {
   padding: 3px;
 }
 
+#content {
+  margin: 30px;
+}
+
 #new-entry{
   border: 1px solid grey;
   margin: 10px 20px;
@@ -45,9 +49,24 @@ h1 {
 
 .entry {
   border: 1px solid grey;
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0px;
   width: 75%;
+
+  $left: 20px;
+
+  .author {
+    margin-left: $left;
+  }
+
+  .mood {
+    margin-left: $left;
+  }
+
+  .content {
+    text-indent: 20px;
+  }
+
 }
 
 .entry:hover {
